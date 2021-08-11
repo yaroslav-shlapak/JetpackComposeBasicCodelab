@@ -25,7 +25,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.test.jetpackcompose.jetpackcomposebasicscodelab.ui.theme.JetpackComposeBasicsCodelabTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,7 +39,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 private fun MyApp(content: @Composable () -> Unit) {
-    JetpackComposeBasicsCodelabTheme {
+    BasicsCodelabTheme {
         // A surface container using the 'background' color from the theme
         Surface(color = Color.Yellow) {
             content()
